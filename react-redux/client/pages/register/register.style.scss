@@ -1,0 +1,29 @@
+@import "~assets/styles/foundation/helpers/bem";
+
+@include bem-b('register') {
+	display: flex;
+	justify-content: center;
+  
+  @include bem-e('title') {
+  	margin : 0;
+  	padding-bottom: 15px;
+  }
+
+  @include bem-e('container') {
+  	margin-top: 5%;
+    min-width: 400px;
+    padding: 40px 40px;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    text-align: center;
+
+    p {
+    	color : red;
+    	padding : 5px 15px;
+    	margin : 0;
+    	text-align: left;
+    }
+  }
+
+}

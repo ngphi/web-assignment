@@ -1,0 +1,27 @@
+.row {
+	@include clearfix;
+  margin: 0 -15px;
+}
+
+@mixin get-column($index,$class) {
+	.col-#{$class}-#{$index} {
+      width: percentage(($index / $grid-num));
+      float: left;
+    }
+}
+
+@mixin create-columns($class){
+   @for $i from 0 through $grid-num {
+    @include get-column($i, $class);
+   }
+}
+
+//cols for tablet 
+@media (min-width: $bp-mobile){
+	@include create-columns(tb);
+}
+
+//cols for desktop
+@media (min-width: $bp-tablet){
+	@include create-columns(dk);
+}

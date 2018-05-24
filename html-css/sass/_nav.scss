@@ -1,0 +1,74 @@
+@mixin nav-variant($color,$background-color){
+	color: $color;
+	z-index: 9999;
+	background-color: $background-color;
+	@include box-shadow(0 8px 6px -6px #999);
+}
+.nav {
+	text-align: center;
+
+	&-item {
+		display: inline-block;
+		margin : 1px 10px;
+		&:hover{
+			border-bottom: 2px solid $call-to-action-color;
+		}
+	}
+
+	&-item > a {
+		text-decoration: none;
+		cursor: pointer;
+		color: inherit;
+	}
+
+	&-list {
+		display: none;
+		@media (min-width: $bp-mobile){
+			display: inline-block;
+		}
+	}
+
+
+	&-item--call-to-action {
+		border: 1px solid $call-to-action-color;
+		border-radius: 20px;
+		padding: 5px 10px;
+		&:hover{
+			background-color: $call-to-action-color;
+			color: #fff;
+			& > a {
+				color: #fff;
+			}
+		}
+	}
+
+	.active{
+		& > a {
+			color: $call-to-action-color;
+		}
+		border-bottom: 2px solid $call-to-action-color;
+	}
+}
+
+.nav--fixed {
+	position: fixed;
+	width: 100%;
+}
+
+.nav--default{
+	@include nav-variant($font-color-base,#fff)
+}
+
+.menu-mobile {
+	.icon-menu-mobile {
+		font-size: 2em;
+		font-weight: bold;
+	}
+	@media (min-width: $bp-mobile){
+		i { display : none;}
+	}
+}
+
+
+
+

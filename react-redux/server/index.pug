@@ -1,0 +1,13 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title React/Dedux Demo
+        link(rel='shortcut icon', href='/assets/images/app.ico')
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css")
+        link(href='/assets/styles/app.css', rel='stylesheet', type='text/css', charset='UTF-8')
+    body
+        #app
+        script(type='text/javascript').
+            window.__INITIAL_STATE__ = !{JSON.stringify(initialState)};
+        script(src='/js/app.js')

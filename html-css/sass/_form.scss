@@ -1,0 +1,61 @@
+$form-container-margin-bottom : 10px;
+$input-color-placeholder: #71859c;
+$input-height-base: 25px;
+$input-bg-color : #475a70;
+
+.form-group {
+	margin-bottom : $form-container-margin-bottom;
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+label {
+	display: inline-block;
+	max-width: 100%;
+	font-weight: bold;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: $input-height-base; 
+	padding: 3px 5px;//$padding-base-vertical $padding-base-horizontal;
+	font-size: $font-size-base;
+	line-height: 1.42857143;; //$line-height-base;
+	border-radius: 4px; //$input-radius;
+	box-shadow: 0 1px 1px rgba(0,0,0,.075);
+	border-color: transparent;
+	background-color: $input-bg-color;
+	@include placeholder;
+}
+
+.radio-inline {
+	position: relative;
+	padding-left: 20px;
+	vertical-align: middle;
+	font-size: $font-size-base;
+	font-weight: normal;
+}
+
+.radio-inline + .radio-inline {
+  margin-top: 0;
+  margin-left: 20px; // space out consecutive inline controls
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],{
+  position: absolute;
+  margin: 0px 0px 0px -20px;
+}
+
+input[type=radio]:checked {
+	width: 0;
+	&:before{
+		font-family: 'simple-line-icons';
+		content: "\E080";
+	  	text-align: center;
+	    color: $secondary-color;
+	}
+}

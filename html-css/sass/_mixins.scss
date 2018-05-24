@@ -1,0 +1,36 @@
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin make-divider($position,$size,$color) {
+	&:after {
+		@if $position == center {
+			left: 46%;
+		}
+		@if $position == right {
+			right: 0;
+		}
+		position: relative;
+	    content: "";
+	    display: block;
+	    height: 2px;
+	    width: $size;
+	    background-color: $color;
+	    margin-top: 5px;
+   }
+}
+
+@mixin centered-container {
+	padding: 0 5px;
+	margin-right: auto;
+	margin-left: auto;
+}

@@ -1,0 +1,7 @@
+export * from './dashboard'
+export * from './mainpage'
+export * from './notfound'
+export * from './register'
+export * from './login'
+export * from './logout'
+export * from './toptraders'

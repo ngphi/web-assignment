@@ -1,0 +1,7 @@
+@import "~assets/styles/foundation/helpers/bem";
+
+@include bem-b('ticker') {
+    height: 400px;
+	min-width: 200px;
+    
+}

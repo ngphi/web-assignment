@@ -1,0 +1,17 @@
+@mixin bem-b($block) {
+  .#{$block} {
+    @content;
+  }
+}
+
+@mixin bem-e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin bem-m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}

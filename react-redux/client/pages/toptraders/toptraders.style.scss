@@ -1,0 +1,12 @@
+@import "~assets/styles/foundation/helpers/bem";
+
+@include bem-b('toptraders') {
+    width: 500px;
+    margin: auto;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+    padding: 15px;
+  @include bem-e('title') {
+    text-align: center;
+  }
+
+}

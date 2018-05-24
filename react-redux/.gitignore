@@ -1,0 +1,10 @@
+# Dependency directories
+node_modules
+
+# Deployed folders
+dist
+
+# code coverage
+test/coverage/
+
+.tern-port

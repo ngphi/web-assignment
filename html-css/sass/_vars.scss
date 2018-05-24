@@ -1,0 +1,28 @@
+$main-blue : #1fb5f6;
+$main-red : red;
+
+$transparent-btn-border-color: #fff;
+$call-to-action-color : #fe3a2f;
+$call-to-action-font-color: #fff;
+$submit-color : #ff3b30;
+$secondary-color : $main-blue;
+$font-color-base: #808080;
+
+$bp-mobile : 768px;
+$bp-tablet: 992px;
+$bp-desktop: 1200px;
+
+$font-size-base : 7.5px;
+$line-height-base:  1.428571429;
+
+$line-height-computed: floor(($font-size-base * $line-height-base));
+$padding-bottom-base : 0.8em;
+
+$container-sm : 750px;
+$container-md : 992px;
+$container-lg : 1200px;
+
+$menu-mb-icon-color: #000;
+$read-more-color: #fe4237;
+
+$grid-num: 12;

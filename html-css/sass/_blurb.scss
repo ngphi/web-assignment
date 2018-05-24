@@ -1,0 +1,13 @@
+$offset-blurb : 2em;
+
+.blurb {
+	position: relative;
+	padding-left: $offset-blurb;
+	&--icon {
+		position: absolute;
+		margin-left: -$offset-blurb;
+	}
+	&--content {
+		word-wrap: break-word;
+	}
+}

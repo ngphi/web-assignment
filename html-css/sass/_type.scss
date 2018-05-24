@@ -1,0 +1,27 @@
+.text-lead {
+  font-size: 1.75em;
+  line-height: 2;
+}
+
+
+.divider-center {
+  @include make-divider(center,2.5em,$secondary-color);
+}
+
+.divider-left-sm {
+  @include make-divider(left,1.5em,$secondary-color);
+}
+
+a.read-more {
+	color: $read-more-color;
+	cursor: pointer;	
+}
+
+ul.social-list{
+  margin-left: -5px;
+	& > li {
+		display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+	}
+}

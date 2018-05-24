@@ -1,0 +1,15 @@
+@import "~assets/styles/foundation/helpers/bem";
+
+@include bem-b('loader') {
+	display: flex;
+    justify-content: center;
+    align-items : center;
+	height: 100%;  
+    @include bem-e('logo'){
+
+    	width: 50px;
+    	height: 50px;
+    	z-index: 11;
+    }
+
+}

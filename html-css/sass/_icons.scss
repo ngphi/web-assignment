@@ -1,0 +1,46 @@
+//default settings is icomoon fonts
+.icon-twitter:before{
+	content: "\F099";
+}
+
+.icon-facebook:before{
+	content: "\F09A";
+}
+
+.icon-github:before{
+	content: "\F113";
+}
+
+.icon-basketball:before{
+	content: "\F17D";
+}
+
+.icon-email:before{
+	font-family: 'simple-line-icons';
+	content: "\E086";
+}
+
+.icon-location:before{
+	font-family: 'simple-line-icons';
+	content: "\E096";
+}
+
+.icon-telephone:before{
+	font-family: 'simple-line-icons';
+	content: "\E600";
+}
+
+.icon-marked:before{
+	font-family: 'simple-line-icons';
+	content: "\E096";
+}
+.icon-www:before{
+	font-family: 'simple-line-icons';
+	content: "\E037";
+}
+
+.icon-menu-mobile:before{
+	font-family: 'simple-line-icons';
+	content: "\E601";
+	color: #000;
+}

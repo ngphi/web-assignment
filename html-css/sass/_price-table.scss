@@ -1,0 +1,53 @@
+$pricing-line-color : #bebebe;
+$number-price-font-size: 3.5em;
+
+.price-table {
+	text-align : center;
+	font-size: 0.8em;
+	background-color: #fff;
+	@include box-shadow(0px 0px 10px -1px rgba(0,0,0,0.1));
+  
+	&--heading {
+		position: relative;
+		font-weight: bold;
+		padding-bottom: 2.5em;
+		h2 {
+			color : #fff;
+		}
+	}
+
+	&--best-offer {
+		position:absolute;
+		padding-top: 5px;
+		width: 100px;
+		left: calc(50% - 100px/2);
+		font-weight: bold;
+		color: #d5d8db;
+	}
+}
+
+.price-table-descript,
+.price-container
+{
+	padding-bottom : $padding-bottom-base;
+}
+
+.price-container {
+	position: relative;
+	& > .dollar-sign {
+		position: absolute;
+		margin-left: -0.7em;
+		font-size: ($number-price-font-size / 2.5);
+		font-weight: 400;
+	}
+
+	& > .number {
+		font-size: $number-price-font-size;
+	    font-weight: bold;
+	    line-height: 1.03em;
+	}
+}
+
+.select-plan-btn {
+	background-color : #1fb5f6;
+}

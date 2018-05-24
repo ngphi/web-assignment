@@ -1,0 +1,21 @@
+@import "~assets/styles/foundation/helpers/bem";
+
+@include bem-b('account') {
+  padding: 15px;
+
+  @include bem-e('balance') {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    & > div {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+  }
+
+
+  @include bem-e('balance-number') {
+    text-align: right;
+    font-size: 30px;
+  }
+
+}

@@ -1,0 +1,53 @@
+@mixin button-size($padding,$font-size) {
+  padding : $padding;
+  font-size: $font-size;
+}
+@mixin button-variant($color, $background, $border){
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+  &:hover {
+    background-color: darken($background, 15%);
+  }
+}
+
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 5px;
+  padding: 5px 0;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  @include button-size(1em 1.5em,0.7em);
+}
+
+//BUTTON SIZES
+.btn-lg {
+  @include button-size(1em 2.5em,1em);
+}
+
+.btn-sm {
+  @include button-size(0.8em 1.2em,0.6em);
+}
+
+//BUTTON SKINS
+.btn-transparent {
+  @include button-variant(#fff, transparent, $transparent-btn-border-color);
+  &:hover{
+    background-color: #fff;
+    color: $font-color-base;
+  }
+}
+.btn-call-to-action {
+  @include button-variant($call-to-action-font-color, $call-to-action-color,$call-to-action-color);
+}
+.btn-secondary {
+  @include button-variant(#fff, $secondary-color, $secondary-color);
+}
+.btn-submit {
+  @include button-variant(#fff, $submit-color,$submit-color);
+}

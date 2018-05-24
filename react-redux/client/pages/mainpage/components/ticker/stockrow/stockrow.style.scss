@@ -1,0 +1,28 @@
+@import "~assets/styles/foundation/helpers/bem";
+
+@include bem-b('stockrow') {
+   cursor: pointer;
+   &:hover {
+   	background-color: #e7e7e7;
+   }
+
+   @include bem-e('detail'){
+   	vertical-align : middle !important;
+   	height: 65px;
+   }
+
+   @include bem-e('change'){
+   		@include bem-m('increase'){
+   			vertical-align : middle !important;
+   	   		color: #fff;
+    		background-color: #5fbb6f;		
+   		}
+   		@include bem-m('decrease'){
+   			vertical-align : middle !important;
+   		   	color: #fff;
+    		background-color: #bd6361;		
+   		}
+
+   }
+
+}

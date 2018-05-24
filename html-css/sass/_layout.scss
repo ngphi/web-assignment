@@ -1,0 +1,149 @@
+$logo-size: 1.5em;
+$logo-color: #535659;
+$logo-first-letter-color: #ff3b30;
+header {
+	align-items: center;
+
+	padding : 1em;;
+	& > .header--logo {
+		font-weight: bold;
+		display:inline-block;
+		color: $logo-color;
+		font-size: $logo-size;
+
+		&::first-letter{
+			color: $logo-first-letter-color;
+		}
+	}
+
+	& > nav {
+		font-size: 0.8em;
+		float: right;
+	}
+}
+
+#intro {
+	background-color: #707374;
+	color: #fff;
+	text-align: center;
+	padding: 160px 0;
+
+	.btn {
+		min-width: 30%;
+	}
+.paragraph {
+		font-size: 1.2em;
+		@media (min-width: $bp-mobile){
+				font-size: 1.1em;
+		}
+		@media (min-width: $bp-tablet){
+				font-size: 1.05em;
+		}
+
+	}
+}
+
+#intro .paragraph,
+#pricing--intro p {
+	margin-bottom: 1em;
+}
+
+#descript {
+	padding: 3em 0 6em 0;
+}
+
+#pricing {
+	background-color: #f1faff;
+	text-align: center;
+	padding: 3em 0 6em 0;
+
+	.text-lead{
+		color: #000;
+	}
+
+	.price-plans{
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+
+	.price-table {
+		padding: 15px;
+	}
+	.pricing-more {
+		text-align: left;
+		@media (min-width: $bp-tablet){
+			width: 50%;
+			margin: auto;
+		}
+	}
+
+	.col-tb-6 {
+		padding: 10px 15px;
+		@media (min-width: $bp-mobile){
+			padding : 20px 15px;
+		}
+	}
+	@media (min-width: $bp-tablet){
+		& .row {
+			width: 90%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+
+}
+
+
+
+footer {
+	background-color: #3f5267;
+	color: #72869c;
+	padding: 2em 0 4em 0;
+	& h4 {
+		color: #fff;
+	}
+
+	& .col-tb-12,
+	& .col-tb-6,
+	& .col-dk-4 {
+		padding: 0 15px;
+	}
+
+	@media (min-width: $bp-tablet){
+		& .row {
+			width: 90%;
+			margin: auto;
+		}
+	}
+
+	.divider-left-sm{
+		margin-bottom: 10px;
+	}
+
+
+	.blurb {
+		margin-bottom: 10px;
+	}
+
+}
+
+.container {
+	@include centered-container;
+	@media (min-width: $bp-mobile) {
+		width: $container-sm;
+		padding: 0 15px;
+	}
+	@media (min-width: $bp-tablet) {
+		width: $container-lg;
+	}
+}
+
+.inner-container {
+	margin-right: auto;
+	margin-left: auto;
+
+	@media (min-width: $bp-tablet){
+		width: $container-lg * 0.60416666;
+	}
+}
+

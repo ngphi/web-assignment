@@ -1,0 +1,13 @@
+@import "~assets/styles/foundation/helpers/bem";
+
+@include bem-b('dashboard') {
+  @include bem-e('title') {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddddd;
+  }
+  @include bem-e('body') {
+    display: flex;
+    justify-content: space-around;
+  }
+}
